@@ -1,0 +1,73 @@
+/* Element Selectors */
+h1{
+  background: MediumSeaGreen;
+  color: navy;
+  padding: 10px 20px 10px 20px;
+}
+
+body{
+  background: teal;
+}
+legend{
+  color: MediumOrchid;
+}
+
+/* start selector */
+*{
+  margin: 0;
+}
+
+
+/* Attribute selectors */
+
+a[href="https://www.google.com"]
+{
+ color: purple;
+ font-style: italic;
+}
+
+input[type="submit"]{
+  color: white;
+  background: navy;
+}
+
+/*Descendant selector*/
+div h2 {
+  color: Sienna;
+}
+
+
+
+
+
+
+/*Sibling selectors*/
+h2 ~ ol {text-transform: uppercase;}
+
+
+
+/*Adjacent selectors*/
+h2+p{
+  text-decoration: underline;
+}
+
+
+
+/*nth-of-type selectors*/
+div:nth-of-type(odd) {
+  background: Turquoise;
+  padding: 20px 30px 10px 30px;
+}
+div:nth-of-type(even) {
+  background: LightSkyBlue;
+  padding: 20px 30px 10px 30px;
+}
+
+
+/*nth-child selector*/
+p:nth-child(2) {
+  color: green;
+}
+p:nth-child(4) {
+  color: steelblue;
+}
